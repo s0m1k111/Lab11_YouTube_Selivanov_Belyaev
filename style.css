@@ -184,6 +184,15 @@ button:hover {
 
 .video-card {
   cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+}
+
+.video-card:hover .thumbnail {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .thumbnail {
@@ -199,6 +208,11 @@ button:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.video-card:hover .thumbnail img {
+  transform: scale(1.05);
 }
 
 .duration {
